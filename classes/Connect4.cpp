@@ -137,7 +137,6 @@ void Connect4::setStateString(const std::string &s) {
                 piece->setPosition(square->getPosition());
                 square->setBit(piece);
             }
-            std::cout << index << std::endl;
         }
     });
 }
@@ -242,8 +241,10 @@ int Connect4::winnerFromState(const std::string &state) {
             }
         }
     }
-    if (state.find('0') == std::string::npos) return 2; // draw
-    return -1; // no winner yet
+    if (state.find('0') == std::string::npos) {
+        return 2;
+    }
+    return -1; 
 }
 
 int Connect4::evaluateStateForPlayer(const std::string &state, int player) {

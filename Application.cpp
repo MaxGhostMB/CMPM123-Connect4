@@ -69,13 +69,6 @@ namespace ClassGame {
                         game->setUpBoard();
                         game->setAIPlayer(1);
                     }
-                    if (ImGui::Button("Start at state")) {
-                        game = new Connect4();
-                        
-                        game->setStateString("000000000000000000000002010000122220011211");
-                        game->setUpBoard();
-                        //game->setAIPlayer(1);
-                    }
                 } else {
                     ImGui::Text("Current Player Number: %d", game->getCurrentPlayer()->playerNumber());
                     ImGui::Text("Current Board State: %s", game->stateString().c_str());
