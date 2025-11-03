@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Darwin-c++"
+	BuildStamp="20251031-0058-Experimental"
+	Name="Maxs-MacBook-Air.local"
+	Generator="ctest-4.1.1"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="17.0.0.17000319"
+	OSName="macOS"
+	Hostname="Maxs-MacBook-Air.local"
+	OSRelease="26.0.1"
+	OSVersion="25A362"
+	OSPlatform="arm64"
+	Is64Bits="1"
+	VendorString="Apple"
+	VendorID="Apple"
+	FamilyID="0"
+	ModelID="0"
+	ModelName="Apple M1"
+	ProcessorCacheSize="131072"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="5120"
+	TotalPhysicalMemory="8192"
+	LogicalProcessorsPerPhysical="8"
+	ProcessorClockFrequency="0"
+	>
+	<Testing>
+		<StartDateTime>Nov 03 00:13 PST</StartDateTime>
+		<StartTestTime>1762157633</StartTestTime>
+		<TestList/>
+		<EndDateTime>Nov 03 00:13 PST</EndDateTime>
+		<EndTestTime>1762157633</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
