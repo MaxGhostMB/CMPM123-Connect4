@@ -266,8 +266,8 @@ int Connect4::evaluateStateForPlayer(const std::string &state, int player) {
     };
 
     int score = 0;
-    for (int x = 0; x < WIDTH; ++x) {
-        for (int y = 0; y < HEIGHT; ++y) {
+    for (int x = 0; x < WIDTH; x++) {
+        for (int y = 0; y < HEIGHT; y++) {
             char c = At(x, y);
             if (c == '0') continue;
 
@@ -301,7 +301,7 @@ int Connect4::evaluateStateForPlayer(const std::string &state, int player) {
                 } else if (count == 3) {
                     score += factor * 50;
                 } else if (count == 4) {
-                    score += factor * 100;
+                    score += factor * 100000;
                 }
             }
         }
@@ -333,7 +333,7 @@ int Connect4::negamax(const std::string &state, int depth, int player, int alpha
     }
 
     int best = -10000000;
-    for (int x = 0; x < WIDTH; ++x) {
+    for (int x = 0; x < WIDTH; x++) {
         int y = getLowestEmptyRow(state, x);
         if (y == -1) continue;
         std::string next = applyMove(state, x, y, player);
@@ -350,7 +350,7 @@ void Connect4::updateAI() {
     int bestVal = -10000000;
     int bestCol = -1;
 
-    for (int x = 0; x < WIDTH; ++x) {
+    for (int x = 0; x < WIDTH; x++) {
         int y = getLowestEmptyRow(state, x);
         if (y == -1) continue;
         std::string next = applyMove(state, x, y, AI_PLAYER);
